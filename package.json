@@ -21,5 +21,13 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HH-FBW6/slider-website-rami-mohamad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HH-FBW6/slider-website-rami-mohamad/issues"
+  },
+  "homepage": "https://github.com/HH-FBW6/slider-website-rami-mohamad#readme"
 }
