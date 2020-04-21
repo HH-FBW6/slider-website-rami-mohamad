@@ -1,2 +1,77 @@
 body {
   margin: 0; }
+
+body {
+  overflow: hidden; }
+
+html {
+  scroll-behavior: smooth; }
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #fff; }
+  .slider .btn {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #fff;
+    color: gray;
+    transition: 0.5s ease-in-out; }
+    .slider .btn:hover {
+      background-color: #4d4c4c;
+      color: #fff; }
+  .slider h1 {
+    font-size: 4em; }
+  .slider p {
+    font-style: bold;
+    font-size: 1.5em; }
+
+#slider-1 {
+  background-color: green; }
+  #slider-1 h1 {
+    animation-name: text-move;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; }
+  #slider-1 p {
+    animation-name: text-move2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; }
+
+@keyframes text-move2 {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0); } }
+
+@keyframes text-move {
+  from {
+    transform: translateY(-300%); }
+  to {
+    transform: translateY(0); } }
+
+#slider-2 {
+  background-color: #7e42a8; }
+
+#slider-3 {
+  background-color: #3188b1; }
+
+#slider-4 {
+  background-color: gray; }
+
+#slider-2 .btn-dark,
+#slider-3 .btn-dark {
+  background-color: #4d4c4c;
+  color: #fff;
+  transition: 0.5s ease-in-out; }
+  #slider-2 .btn-dark:hover,
+  #slider-3 .btn-dark:hover {
+    background-color: #fff;
+    color: #4d4c4c; }
