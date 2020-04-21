@@ -1,1 +1,90 @@
 @import "_reset";
+body{
+    overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    & .btn{
+        border: 1px solid black;
+        padding: 20px;
+        background-color: #fff;
+        color: gray;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            background-color: rgb(77, 76, 76);
+            color: #fff;
+        }
+    }
+    & h1{
+        font-size: 4em;
+    }
+    & p{
+        font-style: bold;
+        font-size: 1.5em;
+    }
+}
+
+#slider-1{
+    background-color: green;
+    & h1{
+        animation-name: text-move;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+    & p {
+        animation-name: text-move2 ;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    }
+@keyframes text-move2{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes text-move{
+    from{
+        transform: translateY(-300%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+#slider-2{
+    background-color: rgb(126, 66, 168);
+}
+#slider-3{
+    background-color: rgb(49, 136, 177);
+}
+#slider-4{
+    background-color: gray;
+}
+#slider-2,
+#slider-3{
+    & .btn-dark{
+        background-color: rgb(77, 76, 76);
+        color: #fff;
+        transition: 0.5s ease-in-out;
+        &:hover{
+        background-color: #fff;
+        color: rgb(77, 76, 76);
+        }
+    }
+    
+}
